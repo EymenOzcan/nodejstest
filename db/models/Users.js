@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const schema = mongoose.Schema(
   {
-    email: String,
+    email: { type: String, required: true, unique: true },
     password: String,
     is_active: Boolean,
     first_name: String,
@@ -10,6 +10,7 @@ const schema = mongoose.Schema(
     phone_number: String,
   },
   {
+    versionKey: false,
     timestamps: {
       createdAt: "created_at",
       updatedAt: "updated_at",
