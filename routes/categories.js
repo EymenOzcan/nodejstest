@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 var express = require("express");
 var router = express.Router();
 const Categories = require("../db/models/Categories");
