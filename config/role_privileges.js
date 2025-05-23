@@ -58,8 +58,6 @@ module.exports = {
       id: "AUDITLOGS",
       name: "Auditlogs Premissions",
     },
-  ],
-  privileges: [
     {
       key: "user_view",
       name: "User view",
